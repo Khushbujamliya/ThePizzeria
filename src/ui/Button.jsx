@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Button({ children, disabled, to, type, onClick }) {
   const base =
-    'inline-block text-sm rounded-full bg-indigo-500 font-semibold uppercase tracking-wide text-white transition-colors duration-300 hover:bg-indigo-400 focus:bg-indigo-300 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-offset-2 disabled:cursor-not-allowed';
+    'inline-block text-sm rounded-full bg-Emerald-500 font-semibold uppercase tracking-wide text-white transition-colors duration-300 hover:bg-Emerald-400 focus:bg-Emerald-300 focus:outline-none focus:ring focus:ring-Emerald-300 focus:ring-offset-2 disabled:cursor-not-allowed';
 
   const styles = {
     primary: base + ' px-4 py-3 md:px-6 md:py-4',
