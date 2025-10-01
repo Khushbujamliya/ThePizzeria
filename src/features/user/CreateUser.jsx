@@ -13,28 +13,31 @@ function CreateUser() {
     e.preventDefault();
 
     if (!username) return;
+
     dispatch(updateName(username));
     navigate('/menu');
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <p className="mb-4 text-sm text-stone-600 md:text-base">
-        👋 Welcome! Please start by telling us your name:
-      </p>
-
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col items-center space-y-6 w-full max-w-sm"
+    >
+      {/* Unique input box */}
       <input
         type="text"
-        placeholder="Your full name"
+        placeholder="Enter your full name"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-        className="input mb-8 w-72"
+        className="w-full px-5 py-3 rounded-xl border-2 border-transparent 
+             bg-gradient-to-r from-slate-700 to-slate-400
+             text-white placeholder-slate-300
+             focus:outline-none focus:ring-2 focus:ring-blue-400 
+             shadow-lg text-lg"
       />
 
       {username !== '' && (
-        <div>
-          <Button type="primary">Start ordering</Button>
-        </div>
+        <Button type="primary">Start ordering</Button>
       )}
     </form>
   );
