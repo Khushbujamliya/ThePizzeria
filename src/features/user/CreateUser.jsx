@@ -29,10 +29,10 @@ function CreateUser() {
         placeholder="Enter your full name"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-        className="w-full px-5 py-3 rounded-xl border-2 border-transparent 
+        className="w-full px-5 py-3 rounded-full border-2 border-transparent 
              bg-gradient-to-r from-slate-700 to-slate-400
              text-white placeholder-slate-300
-             focus:outline-none focus:ring-2 focus:ring-blue-400 
+             focus:outline-none focus:ring-2 focus:ring-slate-400 
              shadow-lg text-lg"
       />
 
