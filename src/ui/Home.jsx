@@ -6,14 +6,14 @@ function Home() {
   const username = useSelector((state) => state.user.username);
 
   return (
-    <div className="my-10 px-4 text-center sm:my-16">
-      <h1 className="mb-8  text-xl font-semibold md:text-3xl">
-        The best pizza.
-        <br />
-        <span className="text-Emerald-400">
-          "Ditch the chain, keep the pizza".
-        </span>
+    <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center bg-slate-50">
+      <h1 className="mb-6 text-4xl md:text-5xl font-bold text-slate-800">
+        The Best Pizza
       </h1>
+
+      <p className="mb-10 text-lg md:text-2xl text-slate-500 italic">
+        “A taste of tradition, delivered fresh.”
+      </p>
 
       {username === '' ? (
         <CreateUser />
